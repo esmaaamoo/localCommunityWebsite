@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: yellow;
+}
+
+header {
+    background-color: yellow;
+    color: #fff;
+    padding: 10px 0px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+.logo { 
+    height: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-left: 50px;
+}
+
+.logo a { 
+    text-decoration: none;
+    color: #000;
+    font-size: 28px;
+    font-family: sans-serif; 
+    font-weight: 900; 
+    margin-left: 3px; 
+    transition: 500ms;
+}   
+.logo a span {
+    color: orangered;
+    transition: 500ms;
+}
+
+.logo a:hover {
+    color: #ff8a1d;
+    transition: 800ms;
+} 
+
+.logo a:hover span {
+    color: #000; 
+    transition: 800ms;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.section-background {
+    background: url("pictures/lenggong-1.jpg") no-repeat center center/cover;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    height: max-content;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.location {
+    margin: 20px 0;
+}
+
+footer {
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 0px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+}
